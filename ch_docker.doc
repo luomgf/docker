@@ -1,0 +1,6 @@
+docker		-h,--help 打印帮助信息
+		--add-registry=[]	
+		--api-cors-header=""	设置远程调用域头。默认禁止。提供的url类似"http:/foo,fttp://bar
+		-b,bridge=""		设定容器的的网络，桥接到一个已经存在的网络上面，默认为空，禁止桥接网络
+		--bip=""		
+		
