@@ -71,3 +71,9 @@ EXPOSE 80
 CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 
 
+镜像
+	镜像的构建
+	1、从运行中的系统构建镜像，
+		debootstrap trusty trusty > /dev/null
+		tar -C trusty -c . | sudo docker import - trusty
+
