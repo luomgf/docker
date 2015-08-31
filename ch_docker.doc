@@ -74,6 +74,20 @@ CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 镜像
 	镜像的构建
 	1、从运行中的系统构建镜像，
-		debootstrap trusty trusty > /dev/null
-		tar -C trusty -c . | sudo docker import - trusty
+		基于已有的镜像
+		1.1、load
+		load    --input file.tar        载入文件到镜像
+                	<       file.tar
+		1.2、impot 
+		cat     ubuntu.tar      |       sudo    docker  import  -       test/ubuntu:v1.0
+		基于linux发行办法构建类似lfs技术
+		1.3、debootstrap[ubuntu]，febootstrap[fedora]
+			debootstrap trusty trusty > /dev/null
+			tar -C trusty -c . | sudo docker import - trusty
+		1.4、Scratch
+			tar cv --files-from /dev/null | docker import - scratch
 
+		
+
+[参考资料]
+	1、Docker —— 从入门到实践：http://dockerpool.com/static/books/docker_practice/index.html
