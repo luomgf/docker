@@ -86,6 +86,9 @@ CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 			tar -C trusty -c . | sudo docker import - trusty
 		1.4、Scratch
 			tar cv --files-from /dev/null | docker import - scratch
+		1.5、纯手工打造
+			a、将更目录下的的文件除proc  boot 拷贝到新目录，chroot进入目录，打为tar包-->生成image
+			b、用现有的基础镜像save xxx.tar ,解压chroot进入，安装相关软件，再打包，再导入
 	2、基于镜像服务器构建镜像
 		2.1、从dockerhub.io
 		2.2、从代理服务器构建镜像，如：DaoCloud
