@@ -99,11 +99,23 @@ CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 		1.2、
 
 	私有仓库的构建
+		创建
 		docker run -d -p 5000:5000 -v /root/my_registry:/tmp/registry registry
 		默认通过registry镜像来实现，且镜像挂载在容器的/tmp/registry目录，这个地方通过-v实现数据共享
-		
-
-		
+		push
+		docker push 104.131.173.242:5000/ubuntu_sshd_gcc_gerry:14.04
+		pull
+		docker pull 104.131.173.242:5000/ubuntu_sshd_gcc_gerry:14.04
+		search
+		curl http://104.131.173.242:5000/v1/search
+		https问题
+			修改Docker配置文件
+			vim /etc/default/docker
+			增加以下一行
+			DOCKER_OPTS="$DOCKER_OPTS --insecure-registry=104.131.173.242:5000"
+			重启Docker
+			sudo service docker restart
+			refer: http://dockerone.com/question/21
 
 [参考资料]
 	1、Docker —— 从入门到实践：http://dockerpool.com/static/books/docker_practice/index.html
