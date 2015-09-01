@@ -86,6 +86,15 @@ CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 			tar -C trusty -c . | sudo docker import - trusty
 		1.4、Scratch
 			tar cv --files-from /dev/null | docker import - scratch
+	2、基于镜像服务器构建镜像
+		2.1、从dockerhub.io
+		2.2、从代理服务器构建镜像，如：DaoCloud
+	镜像推送
+	1、推送到中央服务器
+		1.1、推送到docker hub
+			http://m.blog.chinaunix.net/uid-20788636-id-5049772.html
+		1.2、
+		
 
 		
 
