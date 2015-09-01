@@ -97,6 +97,10 @@ CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 		1.1、推送到docker hub
 			http://m.blog.chinaunix.net/uid-20788636-id-5049772.html
 		1.2、
+
+	私有仓库的构建
+		docker run -d -p 5000:5000 -v /root/my_registry:/tmp/registry registry
+		默认通过registry镜像来实现，且镜像挂载在容器的/tmp/registry目录，这个地方通过-v实现数据共享
 		
 
 		
