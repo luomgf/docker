@@ -119,3 +119,9 @@ CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 
 [参考资料]
 	1、Docker —— 从入门到实践：http://dockerpool.com/static/books/docker_practice/index.html
+	
+用于翻译Docker的常用命令及FAQ
+
+
+* QQ群：321380754
+* 作者：luomg	
