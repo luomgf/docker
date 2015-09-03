@@ -123,7 +123,7 @@ CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 			refer: http://dockerone.com/question/21
 
 ##[参考资料]
-	1 . [Docker —— 从入门到实践](http://dockerpool.com/static/books/docker_practice/index.html "Markdown")
+>	1 . [Docker —— 从入门到实践](http://dockerpool.com/static/books/docker_practice/index.html "Markdown")
 	
 
 
