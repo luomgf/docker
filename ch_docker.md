@@ -1,14 +1,14 @@
-docker启动
+##Docker启动
 	redhat7:/bin/systemctl  start docker.service
-设置自动启动
+	设置自动启动
 	redhat7:chkconfig docker on
 docker自动补全
-docker选取
+##docker或取
 	从默认注册服务器选取
 		仓库名:tag名称
 	指定注册服务器
 
-注册服务器
+##注册服务器
 	默认注册服务器
 	设定默认注册服务器
 	命令行指定注册服务器
