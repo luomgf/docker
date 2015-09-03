@@ -1,7 +1,7 @@
 #Docker常用命令和FAQ翻译及注释
 
 * QQ群：321380754
-* 作者：luomg	
+* 作者：罗明刚	
 
 ##Docker启动
 	redhat7:/bin/systemctl  start docker.service
