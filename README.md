@@ -7,7 +7,7 @@
 	redhat7:/bin/systemctl  start docker.service
 	设置自动启动
 	redhat7:chkconfig docker on
-docker自动补全
+##docker自动补全
 ##docker或取
 	从默认注册服务器选取
 		仓库名:tag名称
@@ -22,8 +22,8 @@ docker自动补全
 	
 
 
-docker命令行
-docker		
+##docker命令行
+docker选项		
 		-a 			指定更新的用户的信息
 		-m			指定提交注释
 		-h,--help 打印帮助信息
@@ -76,8 +76,8 @@ EXPOSE 80
 CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 
 
-镜像
-	镜像的构建
+##镜像
+	##镜像的构建
 	1、从运行中的系统构建镜像，
 		基于已有的镜像
 		1.1、load
@@ -97,7 +97,7 @@ CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 	2、基于镜像服务器构建镜像
 		2.1、从dockerhub.io
 		2.2、从代理服务器构建镜像，如：DaoCloud
-	镜像推送
+	###镜像推送
 	1、推送到中央服务器
 		1.1、推送到docker hub
 			http://m.blog.chinaunix.net/uid-20788636-id-5049772.html
@@ -122,11 +122,10 @@ CMD ["/usr/sbin/apachectl","-D","FOREGROUND"]
 			sudo service docker restart
 			refer: http://dockerone.com/question/21
 
-[参考资料]
+##[参考资料]
 	1、Docker —— 从入门到实践：http://dockerpool.com/static/books/docker_practice/index.html
 	
-用于翻译Docker的常用命令及FAQ
 
 
 * QQ群：321380754
-* 作者：luomg	
+* 作者：罗明刚	
