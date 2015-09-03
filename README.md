@@ -4,9 +4,10 @@
 * 作者：罗明刚	
 
 ##Docker启动
-	redhat7:/bin/systemctl  start docker.service
-	设置自动启动
-	redhat7:chkconfig docker on
+>	###redhat7  
+>	/bin/systemctl	start docker.service
+>	设置自动启动
+>	redhat7:chkconfig docker on
 ##docker自动补全
 ##docker或取
 	从默认注册服务器选取
