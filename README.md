@@ -5,8 +5,8 @@
 
 
 
-##[参考资料]
->	1 . [Docker —— 从入门到实践](https://github.com/3mao/docker/wiki/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8AFAQ "Markdown")
+##详见Docker Wiki
+>	1 . [Docker常用命令及FAQ](https://github.com/3mao/docker/wiki/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%8AFAQ)
 
 * QQ群：321380754
 * 作者：罗明刚	
